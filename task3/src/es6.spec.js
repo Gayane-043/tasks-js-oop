@@ -43,5 +43,29 @@ describe('es6', () => {
             // TODO
             assert.strictEqual(!!dic, true);
         });
+
+        it('на вставку неправильной пары возвращается значение undefined', () => {
+            const dic = new core.Dictionary();
+            assert.strictEqual(dic.push([0, 1, 2], "word"), undefined);
+            assert.strictEqual(dic.push("word", [0, 1]), undefined);
+            assert.strictEqual(dic.push(null, "word"), undefined);
+            assert.strictEqual(dic.push("word", null), undefined);
+            assert.strictEqual(dic.push(null, null), undefined);
+            assert.strictEqual(dic.push(undefined, undefined), undefined);
+            assert.strictEqual(dic.push(undefined, "word"), undefined);
+            assert.strictEqual(dic.push("word", undefined), undefined);
+        });
+
+        it('получение по несуществующему ключу', () => {
+            const dic = new core.Dictionary();
+            assert.strictEqual(dic.get("word"), undefined);
+            assert.strictEqual(dic.get(undefined), undefined);
+        });
+
+        it('получение по существующему ключу', () => {
+            const dic = new core.Dictionary();
+            dic.push("bank", "tinkoff");
+            assert.strictEqual(dic.get("bank"), "tinkoff");
+        });
     });
 });
