@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml"
+    href="https://w7.pngwing.com/pngs/497/624/png-transparent-musical-instruments-musical-theatre-art-background-music-musical-instruments-text-saxophone-art-music-thumbnail.png" />
+  <title>Магазин музыкальных инструментов</title>
+</head>
+<body>
+  <header class="main-header">
+    <a>Гаяне Маргарян 6407</a>
+    <div>
+      <button class="header-btn" type="button" onclick="openForm('createForm')">Добавить товар</button>
+      <button id="setup-btn" class="header-btn" type="button">Список товаров</button>
+    </div>
+  </header>
+  <main class="main">
+    <div class="label flex__start-center">
+      <span>Товары</span>
+    </div>
+    <div class="cards-list"></div>
+    <div class="popup flex__center" id="editForm">
+      <div class="content-window flex__column-center">
+        <input class="content-window__input-form" name="idEdit" type="text" placeholder="ID товара"></input>
+        <input class="content-window__input-form" name="nameEdit" type="text" placeholder="Название"></input>
+        <input class="content-window__input-form" name="providerEdit" type="text" placeholder="Поставщик"></input>
+        <input class="content-window__input-form" name="srcEdit" type="url" placeholder="Ссылка на изображение"></input>
+        <textarea class="content-window__input-desc" name="descEdit" placeholder="Описание"></textarea>
+        <div class="content-window__btn-wrapper flex__space-between">
+          <button class="content-window__btn" id="edit-btn" onclick="editCard(event)">Изменить</button>
+          <button class="content-window__btn" id="delete-btn" onclick="deleteCard(event)">Удалить</button>
+          <button class="content-window__btn" onclick="closeForm('editForm')">Отмена</button>
+        </div>
+      </div>
+    </div>
+    <div class="popup flex__center" id="createForm">
+      <div class="content-window flex__column-center">
+        <input class="content-window__input-form" name="idCreate" type="text" placeholder="ID товара"></input>
+        <input class="content-window__input-form" name="nameCreate" type="text" placeholder="Название"></input>
+        <input class="content-window__input-form" name="providerCreate" type="text" placeholder="Поставщик"></input>
+        <input class="content-window__input-form" name="srcCreate" type="url"
+          placeholder="Ссылка на изображение"></input>
+        <textarea class="content-window__input-desc" name="descCreate" placeholder="Описание"></textarea>
+        <div class="content-window__btn-wrapper flex__space-between">
+          <button class="content-window__btn" onclick="addCard()">Добавить</button>
+          <button class="content-window__btn" onclick="closeForm('createForm')">Отмена</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script defer type="module" src="./main.js"></script>
+  <script src="assets/vid.js"></script>
+  <script src="assets/tovar.js"></script>
+</body>
+</html>
