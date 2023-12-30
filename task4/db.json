@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Гитара",
+      "provider": "Музыкант",
+      "src": "https://w7.pngwing.com/pngs/878/764/png-transparent-brown-acoustic-guitar-acoustic-electric-guitar-takamine-guitars-acoustic-guitar-dreadnought-acoustic-guitar-pickup-guitar-accessory-cuatro-thumbnail.png",
+      "desc": "Акустическая гитара"
+    },
+    {
+      "id": 2,
+      "name": "Барабан",
+      "provider": "Музыка",
+      "src": "https://w7.pngwing.com/pngs/322/265/png-transparent-drums-drum-product-drum-music-download-thumbnail.png",
+      "desc": "Барабанная установка"
+    },
+    {
+      "id": 3,
+      "name": "Скрипка",
+      "provider": "Композитор",
+      "src": "https://w7.pngwing.com/pngs/968/725/png-transparent-violin-fiddle-bow-violin-double-bass-music-download-string-instrument-thumbnail.png",
+      "desc": "Струнные инструменты"
+    },
+    {
+      "id": 4,
+      "name": "Арфа",
+      "provider": "Классика",
+      "src": "https://w7.pngwing.com/pngs/171/529/png-transparent-musical-instrument-string-instrument-harp-piano-harp-violin-orchestra-musical-instruments-thumbnail.png",
+      "desc": "Красивый инструмент"
+    },
+    {
+      "id": 5,
+      "name": "Кларнет",
+      "provider": "Мелодия",
+      "src": "https://w7.pngwing.com/pngs/424/512/png-transparent-clarinet-woodwind-instrument-musical-instruments-saxophone-musical-instruments-saxophone-piccolo-family-thumbnail.png",
+      "desc": "Кларнет как у Сквидварда"
+    }
+  ],
+  "profile": {
+    "name": "Гаяне Маргарян",
+    "group": 6407
+  }
+}
